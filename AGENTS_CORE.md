@@ -22,11 +22,34 @@ Local docs in each product repository must include:
 2. If alignment is partial or none, the implementer must ask the user before continuing.
 3. Verification evidence is required before marking a change approved.
 4. All markdown cross references must remain valid.
+5. Meaningful feature work is spec-first and hard-blocked until an approved feature spec exists.
+
+## Feature Spec Workflow (Hard Block)
+
+Canonical path for feature specs:
+
+- `workflow/feature-specs/`
+
+Required sequence for meaningful feature delivery:
+
+1. Draft spec
+2. Review click-by-click user flow and behavior
+3. Approve spec (`status: approved` in frontmatter)
+4. Begin implementation
+
+Minimum feature spec contract:
+
+- Goal mapping and frontmatter approval fields
+- Click-by-click user flow
+- Behavior coverage and edge cases
+- Implementation plan
+- Acceptance checklist
 
 ## Core References
 
 - `goals/GOALS_GLOBAL.md`
 - `workflow/GOAL_ALIGNMENT_GATE.md`
+- `workflow/feature-specs/README.md`
 - `standards/CODING_STANDARDS.md`
 - `standards/SECURITY_PRIVACY_STANDARDS.md`
 - `templates/GOALS_REPO_TEMPLATE.md`
